@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright 2024
-# Directory: Gary-Agent-RAG/chatbot.py
+# Directory: HelixRAG/examples/chatbot.py
 
 """
 Beautiful terminal-based chatbot to interact with the RAG backend API.

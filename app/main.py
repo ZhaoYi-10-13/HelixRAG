@@ -1,5 +1,5 @@
 # Copyright 2024
-# Directory: Gary-Agent-RAG/app/main.py
+# Directory: HelixRAG/app/main.py
 
 """
 FastAPI application for RAG (Retrieval-Augmented Generation) backend.

@@ -1,5 +1,5 @@
 # Copyright 2024
-# Directory: Gary-Agent-RAG/app/models/requests.py
+# Directory: HelixRAG/app/models/requests.py
 
 """
 Request models for the RAG API endpoints.

@@ -1,5 +1,5 @@
 # Copyright 2024
-# Directory: Gary-Agent-RAG/app/services/rerank.py
+# Directory: HelixRAG/app/services/rerank.py
 
 """
 Reranking service using DashScope Rerank for improved retrieval accuracy.

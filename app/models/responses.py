@@ -1,5 +1,5 @@
 # Copyright 2024
-# Directory: Gary-Agent-RAG/app/models/responses.py
+# Directory: HelixRAG/app/models/responses.py
 
 """
 Response models for the RAG API endpoints.

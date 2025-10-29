@@ -1,5 +1,5 @@
 # Copyright 2024
-# Directory: Gary-Agent-RAG/app/core/database.py
+# Directory: HelixRAG/app/core/database.py
 
 """
 Database connection and schema management using Supabase SDK.

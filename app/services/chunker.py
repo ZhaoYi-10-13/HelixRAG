@@ -1,5 +1,5 @@
 # Copyright 2024
-# Directory: yt-rag/app/services/chunker.py
+# Directory: HelixRAG/app/services/chunker.py
 
 """
 Text chunking utilities for RAG document processing.

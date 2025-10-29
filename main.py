@@ -1,5 +1,5 @@
 # Copyright 2024
-# Directory: Gary-Agent-RAG/main.py
+# Directory: HelixRAG/main.py
 
 """
 Legacy entry point for backward compatibility.

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright 2024
-# Directory: Gary-Agent-RAG/test_setup.py
+# Directory: HelixRAG/tests/test_setup.py
 
 """
 Test script to verify RAG backend setup is working correctly.

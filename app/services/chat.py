@@ -1,5 +1,5 @@
 # Copyright 2024
-# Directory: yt-rag/app/services/chat.py
+# Directory: HelixRAG/app/services/chat.py
 
 """
 Chat service using Alibaba Qwen (DashScope OpenAI-compatible endpoint).

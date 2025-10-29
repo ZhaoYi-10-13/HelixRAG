@@ -1,5 +1,5 @@
 # Copyright 2024
-# Directory: Gary-Agent-RAG/app/services/document_parser.py
+# Directory: HelixRAG/app/services/document_parser.py
 
 """
 Enhanced document parsing service using LlamaIndex for better document processing.
