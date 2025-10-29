@@ -43,9 +43,6 @@ HelixRAG/
 ### Step 1: Clone and Install Dependencies (Tencent Cloud / Ubuntu)
 
 ```bash
-sudo apt update && sudo apt upgrade -y
-
-sudo apt install -y python3 python3-venv python3-dev build-essential git curl
 
 git clone https://github.com/ZhaoYi-10-13/HelixRAG.git
 cd HelixRAG
