@@ -12,8 +12,8 @@ import sys
 import os
 from pathlib import Path
 
-# Add the app directory to Python path
-sys.path.insert(0, str(Path(__file__).parent))
+# Add project root to Python path so that `app` package is importable
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 
 def _sanitize_env():
