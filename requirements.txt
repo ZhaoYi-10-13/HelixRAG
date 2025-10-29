@@ -1,0 +1,48 @@
+fastapi==0.112.0
+starlette==0.37.2
+uvicorn==0.30.6
+
+# Env & settings
+python-dotenv==1.2.1
+pydantic==2.10.6
+pydantic-settings==2.11.0
+typing-inspection==0.4.2
+python-multipart==0.0.9
+
+# Supabase stack
+supabase==2.22.2
+postgrest==2.22.3
+realtime==2.5.3
+storage3==0.12.1
+supabase-auth==2.22.3
+supabase-functions==2.22.3
+
+# AI SDKs
+openai==1.55.3
+anthropic==0.72.0
+dashscope==1.20.4
+
+# Logging & misc
+rich==14.2.0
+
+# LlamaIndex & RAG
+llama-index-core==0.10.67
+llama-index-embeddings-dashscope==0.1.4
+llama-index-postprocessor-dashscope-rerank-custom==0.1.0
+llama-index-readers-file==0.1.33
+llama-index-vector-stores-faiss==0.1.2
+faiss-cpu==1.8.0.post1
+
+# Document parsing
+unstructured==0.18.15
+beautifulsoup4==4.14.2
+striprtf==0.0.26
+pypdf==4.3.1
+defusedxml==0.7.1
+
+# HTTP stack pinned for compatibility
+httpx==0.27.0
+httpcore==1.0.9
+
+# Optional performance/stability
+tenacity==8.5.0
