@@ -80,8 +80,9 @@ You can also configure OPENAI_API_KEY or ANTHROPIC_API_KEY as backup providers.
 ### Step 3: Configure Environment
 
 ```bash
+cp .env.helix .env
 # Create and edit your environment file
-nano .env  # or use your preferred editor
+nano .env
 ```
 
 Put the following into `.env` (fill in real values where needed):
@@ -107,10 +108,7 @@ RERANK_TOP_N=6
 MAX_FILE_SIZE_MB=50
 SUPPORTED_FILE_TYPES=pdf,docx,txt,md,html,csv
 
-# (Optional) If you want to use a DIFFERENT key for DashScope rerank
-# rather than reusing ALIYUN_API_KEY, set the override below.
-# By default the backend will fall back to ALIYUN_API_KEY.
-# DASHSCOPE_API_KEY=
+
 
 ```
 
@@ -378,3 +376,4 @@ http://<公网IP>/chat
 即可进入聊天页面 🎉
 
 如果你觉得页面太单一，可以查看[这个项目](https://github.com/ZhaoYi-10-13/Agent-ui.git)去了解如何基于 React + Vite 构建一个首页从而做到更精美！
+
