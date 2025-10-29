@@ -80,14 +80,11 @@ You can also configure OPENAI_API_KEY or ANTHROPIC_API_KEY as backup providers.
 ### Step 3: Configure Environment
 
 ```bash
-# Copy environment template
-cp .env.example .env
-
-# Edit with your real API keys
+# Create and edit your environment file
 nano .env  # or use your preferred editor
 ```
 
-Update .env with your values:
+Put the following into `.env` (fill in real values where needed):
 ```env
 # -------- Supabase --------
 SUPABASE_URL=https://your-project-ref.supabase.co
@@ -98,22 +95,23 @@ SUPABASE_SERVICE_ROLE_KEY=your_service_role_key_here
 AI_PROVIDER=aliyun
 
 # Aliyun Qwen (default)
-ALIYUN_API_KEY=sk-your_aliyun_key_here
+ALIYUN_API_KEY=your_aliyun_key_here
 ALIYUN_CHAT_MODEL=qwen-plus
 ALIYUN_EMBED_MODEL=text-embedding-v4
-
-# Optional：OpenAI
-OPENAI_API_KEY=sk-your_openai_key_here
-OPENAI_CHAT_MODEL=gpt-4o
-OPENAI_EMBED_MODEL=text-embedding-3-large
-
-# Optional：Anthropic
-ANTHROPIC_API_KEY=your_anthropic_key_here
-ANTHROPIC_CHAT_MODEL=claude-3-5-sonnet-20241022
 
 # -------- App Config --------
 ENVIRONMENT=development
 LOG_LEVEL=INFO
+ENABLE_RERANKING=true
+RERANK_TOP_N=6
+MAX_FILE_SIZE_MB=50
+SUPPORTED_FILE_TYPES=pdf,docx,txt,md,html,csv
+
+# (Optional) If you want to use a DIFFERENT key for DashScope rerank
+# rather than reusing ALIYUN_API_KEY, set the override below.
+# By default the backend will fall back to ALIYUN_API_KEY.
+# DASHSCOPE_API_KEY=
+
 ```
 
 ---
@@ -138,7 +136,7 @@ LOG_LEVEL=INFO
 
 ```bash
 # Test your complete setup
-python test_setup.py
+python tests/test_setup.py
 ```
 
 This verifies:
@@ -156,6 +154,8 @@ This verifies:
 uvicorn main:app --reload --port 8000
 uvicorn main:app --host 0.0.0.0 --port 80 # For Aliyun HTTP Service
 ```
+
+Note: Binding to port 80 on Linux may require elevated privileges. If you encounter a permission error, run with `sudo` or prefer port 8000.
 
 The API will be available at:
 - **API**: http://localhost:8000

@@ -50,3 +50,9 @@ settings = Settings()
 
 def get_settings() -> Settings:
     return settings
+
+# Convenience accessor so the rest of the codebase can rely on a single
+# Qwen/DashScope credential without requiring duplicate env vars.
+def get_effective_dashscope_key() -> str:
+    """Return DashScope API key, falling back to ALIYUN_API_KEY when unset."""
+    return settings.dashscope_api_key or settings.aliyun_api_key

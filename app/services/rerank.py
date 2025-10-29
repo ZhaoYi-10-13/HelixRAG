@@ -11,7 +11,7 @@ from typing import List, Dict, Any, Optional
 from llama_index.postprocessor.dashscope_rerank import DashScopeRerank
 import dashscope
 from llama_index.core.schema import NodeWithScore, TextNode
-from ..core.config import get_settings
+from ..core.config import get_settings, get_effective_dashscope_key
 
 logger = logging.getLogger(__name__)
 settings = get_settings()
@@ -30,14 +30,13 @@ class RerankService:
         self.top_n = top_n
         # Ensure DashScope SDK sees the API key globally
         try:
-            if settings.dashscope_api_key:
-                dashscope.api_key = settings.dashscope_api_key
+            dashscope.api_key = get_effective_dashscope_key()
         except Exception:
             pass
         self.reranker = DashScopeRerank(
             top_n=top_n,
             return_documents=True,
-            api_key=settings.dashscope_api_key
+            api_key=get_effective_dashscope_key()
         )
         logger.info(f"Initialized DashScope Rerank service with top_n={top_n}")
     
