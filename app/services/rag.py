@@ -1,5 +1,5 @@
 # Copyright 2024
-# Directory: yt-rag/app/services/rag.py
+# Directory: HelixRAG/app/services/rag.py
 
 """
 RAG (Retrieval-Augmented Generation) service implementation.

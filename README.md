@@ -15,7 +15,7 @@
 ## 🏗️ Architecture
 
 ```
-Gary-Agent-RAG/
+HelixRAG/
 ├── app/
 │   ├── core/           # Infrastructure (config, database)
 │   ├── models/         # Pydantic data models
@@ -44,12 +44,12 @@ Gary-Agent-RAG/
 
 ```bash
 # Clone the repository
-git clone https://github.com/ZhaoYi-10-13/Gary-Agent-RAG.git
-cd Gary-Agent-RAG
+git clone https://github.com/ZhaoYi-10-13/HelixRAG.git
+cd HelixRAG
 
 # Create virtual environment
-python3.11 -m venv venv_gary_rag
-source venv_gary_rag/bin/activate  # On Windows: venv_gary_rag\Scripts\activate
+python3.11 -m venv venv_helixrag
+source venv_helixrag/bin/activate  # On Windows: venv_helixrag\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -281,12 +281,12 @@ sudo apt install -y python3.11 python3.11-venv python3.11-dev python3.11-distuti
 sudo apt install -y git curl build-essential
 
 # 克隆项目
-git clone https://github.com/ZhaoYi-10-13/Gary-Agent-RAG.git
-cd Gary-Agent-RAG
+git clone https://github.com/ZhaoYi-10-13/HelixRAG.git
+cd HelixRAG
 
 # 创建虚拟环境
-python3.11 -m venv venv_gary_rag
-source venv_gary_rag/bin/activate
+python3.11 -m venv venv_helixrag
+source venv_helixrag/bin/activate
 
 # 安装依赖
 pip install -r requirements.txt

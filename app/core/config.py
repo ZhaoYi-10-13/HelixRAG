@@ -1,4 +1,4 @@
-# Directory: Gary-Agent-RAG/app/core/config.py
+# Directory: HelixRAG/app/core/config.py
 from typing import Literal, Optional
 from pydantic_settings import BaseSettings
 from pydantic import Field

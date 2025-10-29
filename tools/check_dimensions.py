@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Copyright 2024
-# Directory: Gary-Agent-RAG/check_dimensions.py
+# Directory: HelixRAG/tools/check_dimensions.py
 
 """
 Quick script to check embedding dimensions in the database.

@@ -1,4 +1,4 @@
-# Directory: yt-rag/app/services/embedding.py
+# Directory: HelixRAG/app/services/embedding.py
 import logging
 from typing import List
 from openai import OpenAI
